@@ -1,0 +1,90 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.76);
+    display: flex;
+    align-items: start;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.header2 {
+    background-color: rgba(0, 0, 0, 0.76);
+    display: none;
+    align-items: start;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.header h1, .header2 h1 {
+    color: white;
+    font-size: 20px;
+}
+
+.logo {
+    height: 120px;
+    margin-inline: 15px;
+}
+
+.flag {
+    height: 30px;
+    width: auto;
+    margin-inline: 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+
+    .header {
+        display: none;
+    }
+
+    .header2 {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .logo {
+        height: 90px;
+        margin-inline: 15px;
+    }
+
+    .flag {
+        height: 22px;
+        width: auto;
+        margin-inline: 15px;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    .header2{
+        min-width: 240px;
+    }
+
+    .logo {
+        height: 80px;
+        margin-inline: 10px;
+    }
+
+    .flag {
+        height: 20px;
+        width: auto;
+        margin-inline: 8px;
+        cursor: pointer;
+    }
+
+}

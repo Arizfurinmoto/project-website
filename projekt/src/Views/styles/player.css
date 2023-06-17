@@ -1,0 +1,149 @@
+.player {
+    background: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+    text-align: center;
+    color: black;
+    width: 70vw;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: auto;
+}
+
+.player2 {
+    background: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+    text-align: center;
+    color: black;
+    width: 70vw;
+    margin-top: 2rem;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    overflow: auto;
+}
+
+.player img, .player2 img {
+    height: 30rem;
+    width: auto;
+    object-fit: cover;
+    border-radius: 1.25rem;
+    box-shadow: 0 5px 10px rgba(2, 2, 2, 0.425);
+}
+
+.column{
+    width: 90%;
+    margin-left: 1rem;
+}
+
+.column2 {
+    width: 90%;
+    margin-left: 1rem;
+    display: none;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+th,td {
+    border: 1px solid #000;
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .player img, .player2 img {
+        height: 20rem;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .player {
+        font-size: 13px;
+    }
+
+    .player img, .player2 img {
+        height: 15rem;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .player {
+        display: none;
+    }
+
+    .player2 {
+        display: block;
+    }
+
+    .description-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-items: center;
+    }
+
+    .description-row p {
+        margin-left: 1rem;
+    }
+
+    .column, .column2 {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .description-row p {
+        margin-left: 0;
+    }
+
+    .description-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 635px) {
+
+    .description-row p {
+        font-size: 13px;
+    }
+
+    .player2 img {
+        height: 12rem;
+        width: auto;
+    }
+
+    th,td {
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    .column {
+        display: none;
+    }
+
+    .column2 {
+        display: block;
+    }
+}
